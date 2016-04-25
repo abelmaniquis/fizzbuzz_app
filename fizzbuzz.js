@@ -6,8 +6,8 @@ $(document).ready(function(){
     });
 
 function solvefizzbuzz(num){
-    var i = 0;
-    while(i < num){
+    var i = 1;
+    while(i <= num){
         if(i%3 === 0){
             $("ul").append("<li>fizz</li>");
         }
