@@ -1,9 +1,15 @@
 $(document).ready(function(){
+    
+    $('#btn1').click()
+        var num = prompt("give me a number")
+        
+        console.log(solvefizzbuzz(num));
+    
+});
 
-    $("#btn1").click(function(){
-        for(var i = 1; i <=100; i+=1)
-        {
-            
+
+function solvefizzbuzz(num){
+    for(var i = 0; i<= num;i++){
         if((i%3 == 0)&&(i%5 != 0)){
             $("body").append("<li>fizz</li>");
         }
@@ -16,7 +22,5 @@ $(document).ready(function(){
         else{
             $("body").append("<li>" + i + "</li>")
         }
-
-        }
-    });
-});
+    }
+}
